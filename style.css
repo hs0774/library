@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    height: 100px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    font-size: 32px;
+    padding-left: 12px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    height: 50px;
+    width: 100px;
+    border-radius: 0%;
+    font-size: 18px;
+    background-color: rgb(93, 93, 243);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:active {
+    background-color: rgb(0, 106, 108);
+ }
+
+ .modal-container{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top:30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+   
+ }
+ .hidden{
+    display: none;
+ }
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    justify-content: space-around;
+    border: solid 3px red;
+    align-items: center;
+} 
+
+.x{
+    display: flex;
+    padding-right: 16px;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 100%;
+}
+
+.btn2{
+    border-radius: 50%;
+    border: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+    padding-left: 4px;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+}
+
+.content label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.dummybox{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 106, 108);
+    border-radius: 10%;
+    color: whitesmoke;
+    padding-left: 10px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 6px rgba(0.6, 0.6, 0.6, 0.6);
+}
+
+.remove{
+    display: flex;
+    justify-content: center;
+
+}
+.removee{
+    border-radius: 10%;
+    border: none;
+    height: 25px;
+    width: 60px;
+    background-color: rgb(243, 148, 93);
+    color: whitesmoke;
+}
+.removee:active{
+    background-color: rgb(93, 93, 243);
+}
+
+.mainContent{
+    display: grid;
+}
+
+/* ok so what i have to do now is figure out a way to make modal pop up when
+the add book button is pressed 
+and the rest of the content added by the books can be in a grid that is auto filled
+and removes etc also change the border when read is clicked or unclicked just on 
+one side make it red if unread and green if read 
+    steps to do: 
+   ? *style the box that is created when user submits 
+
+    *after that i have to validate the info from the modal 
+    *make whole page opaque when clicking on modal 
+
+then i have to do javascripting:
+in the js i have to make the buttons react
+    *  
+    *
+    *inputs have to be taken with .value after pressing submit
+    * submit then does ...
+    *i have to take the inputted form values in push a newly created object in an array, 
+    *create a box each time i do this and 
+    *have remove box remove an element from the array
+    *also remove the box 
+    *update the display
+*/
+
