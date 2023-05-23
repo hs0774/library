@@ -18,17 +18,20 @@
                 <button class="btn2">x</button>
             </div>
             <div class="content">
-                <label for="title">Title:</label>
-                <input type="text" id="title">
-                <label for="author">Author:</label>
-                <input type="text" id="author">
-                <label for="Pages"># of Pages:</label>
-                <input type="number" id="Pages">
-                <label for="Read">Read: <input type="checkbox" id="Read"></label>
-            </div>
+                <form>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" required>
+                    <label for="Pages"># of Pages:</label>
+                    <input type="number" id="Pages" min="1" required>
+                    <label for="Read">Read: <input type="checkbox" id="Read"></label>
+                
             <div class="submit">
-                <button class="btn3">Submit</button>
+                <button class="btn3" type="submit">Submit</button>
             </div>
+                </form>
+        </div>
         </div>
      </div>
     </div>

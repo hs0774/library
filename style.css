@@ -60,6 +60,8 @@ body{
     justify-content: space-around;
     border: solid 3px red;
     align-items: center;
+    color: whitesmoke;
+    background-color: black;
 } 
 
 .x{
@@ -68,6 +70,14 @@ body{
     justify-content: flex-end;
     width: 100%;
     max-width: 100%;
+}
+.btn3{
+    border-radius: 50%;
+    border: none;
+    background-image: linear-gradient(to right, pink, lightgreen);
+    height: 40px;
+    width: 80px;
+    color: whitesmoke;
 }
 
 .btn2{
@@ -78,7 +88,7 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: 250px;
     justify-content: space-around;
     padding-left: 4px;
 }
@@ -126,6 +136,28 @@ body{
 
 .mainContent{
     display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-row: auto;
+}
+
+input:invalid {
+    border-color: red;
+}
+  
+input:valid {
+    border-color: green;
+}
+
+ input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
 }
 
 /* ok so what i have to do now is figure out a way to make modal pop up when
@@ -136,19 +168,16 @@ one side make it red if unread and green if read
     steps to do: 
    ? *style the box that is created when user submits 
 
-    *after that i have to validate the info from the modal 
-    *make whole page opaque when clicking on modal 
-
 then i have to do javascripting:
 in the js i have to make the buttons react
     *  
     *
-    *inputs have to be taken with .value after pressing submit
-    * submit then does ...
-    *i have to take the inputted form values in push a newly created object in an array, 
-    *create a box each time i do this and 
-    *have remove box remove an element from the array
+    *
+    * 
+    * style box when read box is checked 
+    *create a box each time an object is pushed 
+    *have remove button, remove an element from the array
     *also remove the box 
-    *update the display
+    *update the display and the array 
 */
 
