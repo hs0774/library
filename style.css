@@ -164,28 +164,3 @@ form{
     justify-content: space-between;
     height: 250px;
 }
-
-/* ok so what i have to do now is figure out a way to make modal pop up when
-the add book button is pressed 
-and the rest of the content added by the books can be in a grid that is auto filled
-and removes etc also change the border when read is clicked or unclicked just on 
-one side make it red if unread and green if read 
-    steps to do: 
-   ? *style the box that is created when user submits 
-
-then i have to do javascripting:
-in the js i have to make the buttons react
-    *  
-    *
-    *
-    * 
-    * style box when read box is checked 
-    *create a box each time an object is pushed 
-    *have remove button, remove an element from the array
-    *also remove the box 
-    *update the display and the array 
-*/
-
-/*
-
-*/
