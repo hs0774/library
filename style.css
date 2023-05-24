@@ -136,6 +136,7 @@ body{
 
 .mainContent{
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(5,1fr);
     grid-row: auto;
 }
@@ -150,6 +151,10 @@ input:valid {
 
  input:invalid:required {
     background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+#Read:checked{
+    border-left: solid 1px red;
 }
 
 form{
@@ -181,3 +186,6 @@ in the js i have to make the buttons react
     *update the display and the array 
 */
 
+/*
+
+*/
